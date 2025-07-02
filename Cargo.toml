@@ -4,10 +4,16 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-rmcp = { git = "https://github.com/modelcontextprotocol/rust-sdk.git", rev="b9d7d61ebd6e8385cbc4aa105d4e25774fc1a59c",features=["reqwest","transport-child-process","transport-streamable-http-client","client"] }
+rmcp = { git = "https://github.com/modelcontextprotocol/rust-sdk.git", rev="b9d7d61ebd6e8385cbc4aa105d4e25774fc1a59c",features=["reqwest","transport-child-process","transport-streamable-http-client","client","transport-sse-client"] }
 tokio = { version = "1.45.1", features = ["full"] }
 tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
 tracing = "0.1.41"
 anyhow = "1.0.98"
 reqwest = "0.12.20"
 serde_json = "1.0.140"
+rig-core = "0.13.0"
+dotenvy = "0.15.7"
+futures = "0.3.31"
+serde = "1.0.219"
+tracing-appender = "0.2.3"
+toml = "0.8.23"

@@ -1,0 +1,4 @@
+[[mcp.server]]
+name="Sample"
+protocol="streamable"
+url = "http://localhost:5000"
